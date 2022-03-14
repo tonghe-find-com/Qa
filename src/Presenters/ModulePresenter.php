@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Presenters;
+namespace TypiCMS\Modules\Qas\Presenters;
 
 use TypiCMS\Modules\Core\Presenters\Presenter;
 

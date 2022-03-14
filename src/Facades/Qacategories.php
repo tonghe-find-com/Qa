@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Facades;
+namespace TypiCMS\Modules\Qas\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tonghe\\Modules\\Qas\\": "src/"
+            "TypiCMS\\Modules\\Qas\\": "src/"
         }
     },
     "minimum-stability": "dev",

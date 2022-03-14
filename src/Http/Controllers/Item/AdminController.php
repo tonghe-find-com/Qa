@@ -1,15 +1,15 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Http\Controllers\Item;
+namespace TypiCMS\Modules\Qas\Http\Controllers\Item;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Maatwebsite\Excel\Facades\Excel;
 use TypiCMS\Modules\Core\Http\Controllers\BaseAdminController;
-use Tonghe\Modules\Qas\Exports\Export;
-use Tonghe\Modules\Qas\Http\Requests\FormRequest;
-use Tonghe\Modules\Qas\Models\Qa;
+use TypiCMS\Modules\Qas\Exports\Export;
+use TypiCMS\Modules\Qas\Http\Requests\FormRequest;
+use TypiCMS\Modules\Qas\Models\Qa;
 
 class AdminController extends BaseAdminController
 {

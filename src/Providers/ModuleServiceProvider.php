@@ -1,16 +1,16 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Providers;
+namespace TypiCMS\Modules\Qas\Providers;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 use TypiCMS\Modules\Core\Facades\TypiCMS;
 use TypiCMS\Modules\Core\Observers\SlugObserver;
-use Tonghe\Modules\Qas\Composers\SidebarViewComposer;
-use Tonghe\Modules\Qas\Facades\Qas;
-use Tonghe\Modules\Qas\Models\Qa;
-use Tonghe\Modules\Qas\Models\Qacategory;
-use Tonghe\Modules\Qas\Facades\Qacategories;
+use TypiCMS\Modules\Qas\Composers\SidebarViewComposer;
+use TypiCMS\Modules\Qas\Facades\Qas;
+use TypiCMS\Modules\Qas\Models\Qa;
+use TypiCMS\Modules\Qas\Models\Qacategory;
+use TypiCMS\Modules\Qas\Facades\Qacategories;
 
 class ModuleServiceProvider extends ServiceProvider
 {

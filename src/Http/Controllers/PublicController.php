@@ -1,11 +1,11 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Http\Controllers;
+namespace TypiCMS\Modules\Qas\Http\Controllers;
 
 use Illuminate\View\View;
 use TypiCMS\Modules\Core\Http\Controllers\BasePublicController;
-use Tonghe\Modules\Qas\Models\Qacategory;
-use Tonghe\Modules\Qas\Models\Qa;
+use TypiCMS\Modules\Qas\Models\Qacategory;
+use TypiCMS\Modules\Qas\Models\Qa;
 
 class PublicController extends BasePublicController
 {

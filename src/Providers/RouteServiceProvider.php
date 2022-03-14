@@ -1,16 +1,16 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Providers;
+namespace TypiCMS\Modules\Qas\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 use TypiCMS\Modules\Core\Facades\TypiCMS;
-use Tonghe\Modules\Qas\Http\Controllers\Category\AdminController as CategoryAdminController;
-use Tonghe\Modules\Qas\Http\Controllers\Item\AdminController;
-use Tonghe\Modules\Qas\Http\Controllers\Category\ApiController as CategoryApiController;
-use Tonghe\Modules\Qas\Http\Controllers\Item\ApiController;
-use Tonghe\Modules\Qas\Http\Controllers\PublicController;
+use TypiCMS\Modules\Qas\Http\Controllers\Category\AdminController as CategoryAdminController;
+use TypiCMS\Modules\Qas\Http\Controllers\Item\AdminController;
+use TypiCMS\Modules\Qas\Http\Controllers\Category\ApiController as CategoryApiController;
+use TypiCMS\Modules\Qas\Http\Controllers\Item\ApiController;
+use TypiCMS\Modules\Qas\Http\Controllers\PublicController;
 
 class RouteServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Models;
+namespace TypiCMS\Modules\Qas\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Laracasts\Presenter\PresentableTrait;
@@ -9,7 +9,7 @@ use TypiCMS\Modules\Core\Models\Base;
 use TypiCMS\Modules\Files\Models\File;
 use TypiCMS\Modules\Files\Traits\HasFiles;
 use TypiCMS\Modules\History\Traits\Historable;
-use Tonghe\Modules\Qas\Presenters\ModulePresenter;
+use TypiCMS\Modules\Qas\Presenters\ModulePresenter;
 use Route;
 
 class Qacategory extends Base

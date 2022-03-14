@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonghe\Modules\Qas\Composers;
+namespace TypiCMS\Modules\Qas\Composers;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Gate;
