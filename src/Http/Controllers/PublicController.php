@@ -14,7 +14,7 @@ class PublicController extends BasePublicController
         $model = null;
         $list = Qa::published()->orderBy('position','ASC')->get();
 
-        return view('qaitems::public.index')
+        return view('qas::public.index')
             ->with(compact('model','list'));
     }
 
@@ -23,7 +23,7 @@ class PublicController extends BasePublicController
         $model = Qacategory::published()->whereSlugIs($slug)->firstOrFail();
         $list = Qa::published()->where('category_id',$model->id)->orderBy('position','ASC')->get();
 
-        return view('qaitems::public.index')
+        return view('qas::public.index')
             ->with(compact('model','list'));
     }
 }
