@@ -41,7 +41,4 @@ class Qa extends Base
         return $this->belongsTo(File::class, 'image_id');
     }
 
-    public function list(){
-        return Qacategory::published()->orderBy('position','ASC')->get();
-    }
 }

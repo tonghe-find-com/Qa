@@ -11,6 +11,8 @@ use TypiCMS\Modules\Files\Traits\HasFiles;
 use TypiCMS\Modules\History\Traits\Historable;
 use TypiCMS\Modules\Qas\Presenters\ModulePresenter;
 use Route;
+use TypiCMS\Modules\Qas\Models\Qa;
+use App\HasList;
 
 class Qacategory extends Base
 {
@@ -18,6 +20,7 @@ class Qacategory extends Base
     use HasTranslations;
     use Historable;
     use PresentableTrait;
+    use HasList;
 
     protected $presenter = ModulePresenter::class;
 
@@ -59,5 +62,10 @@ class Qacategory extends Base
         }else{
             return '/';
         }
+    }
+
+    public function child()
+    {
+        return $this->hasMany(Qa::class,'category_id')->published()->orderBy('position','ASC');
     }
 }
