@@ -16,7 +16,7 @@ class ApiController extends BaseApiController
     {
         $data = QueryBuilder::for(Qacategory::class)
             ->selectFields($request->input('fields.qacategories'))
-            ->allowedSorts(['status_translated', 'title_translated'])
+            ->allowedSorts(['status_translated', 'title_translated','position'])
             ->allowedFilters([
                 AllowedFilter::custom('title', new FilterOr()),
             ])
@@ -28,7 +28,7 @@ class ApiController extends BaseApiController
 
     protected function updatePartial(Qacategory $qacategory, Request $request)
     {
-        foreach ($request->only('status') as $key => $content) {
+        foreach ($request->only('status','position') as $key => $content) {
             if ($qacategory->isTranslatableAttribute($key)) {
                 foreach ($content as $lang => $value) {
                     $qacategory->setTranslation($key, $lang, $value);
